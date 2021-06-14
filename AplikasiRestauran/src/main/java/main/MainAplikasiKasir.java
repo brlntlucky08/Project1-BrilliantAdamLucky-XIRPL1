@@ -17,6 +17,12 @@ import java.util.Scanner;
  */
 public class MainAplikasiKasir {
     
+    public DaftarMenu daftarMenu;
+    //Tambahkan    
+    public static double PAJAK_PPN = 0.10;
+    public static double BIAYA_SERVICE = 0.05;
+    //End of Tambahkan
+    
     public static void main(String[] args) {
     //inisialisasi kelas scanner untuk mengambil
     //input dari keyboard
@@ -27,7 +33,6 @@ public class MainAplikasiKasir {
     app.generateDaftarMenu();
     }
     
-    public DaftarMenu daftarMenu;
     public void generateDaftarMenu() {
         daftarMenu = new DaftarMenu();
         daftarMenu.tambahMenu(new Ramen("Ramen Seafood", 25000));
